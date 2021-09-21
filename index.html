@@ -9,10 +9,25 @@
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     </head>
     <body>
+        <div id="render"></div>
         
 
         <script type="text/babel">
+            
 
+            function List(props) {
+                return <li style = {{color: props.color}}>{props.children}</li>
+            };
+
+
+            function App() {
+
+            }
+
+            ReactDOM.render(
+                <App />,
+                document.getElementById('render'),
+            );
         </script>
     </body>
 </html>
